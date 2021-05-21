@@ -1,0 +1,13 @@
+<h1>Blog</h1>
+
+{{ name }}
+
+<ol>
+    {% for item in lista_nomes %}
+      {% if item == 'Ricardo' %}
+          <li><b>{{ item }}</b></li>
+      {% else %}
+          <li>{{ item }}</li>
+       {% endif %}
+    {% endfor %}
+</ol>
